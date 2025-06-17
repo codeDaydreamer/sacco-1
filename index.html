@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-50 scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sacco</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://kit.fontawesome.com/75d8ec5970.js" crossorigin="anonymous"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+
+</head>
+<body class="bg-gray-50 text-gray-800 ">
+  
+<header id="header" 
+  class="fixed w-full top-0 left-0 z-50 transition-all duration-500 ease-in-out">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="#" class="text-2xl font-semibold text-gray-50 tracking-wide">
+      Sacco
+    </a>
+    <nav>
+      <ul class="flex space-x-6">
+        <li><a href="#about" class="text-gray-50 hover:text-blue-500 transition duration-300 font-semibold">About</a></li>
+        <li><a href="#services" class="text-gray-50 hover:text-blue-500 transition duration-300 font-semibold">Services</a></li>
+        <li><a href="#contact" class="text-gray-50 hover:text-blue-500 transition duration-300 font-semibold">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<!-- Hero Section -->
+<section
+  id="hero"
+  class="flex flex-col items-center justify-center text-center p-20 relative min-h-screen"
+>
+  <!-- Background Image -->
+  <div
+    class="absolute inset-0 bg-center bg-no-repeat bg-cover bg-fixed"
+    style="background-image: url('/graphics/sacco-3.jpg');"
+  ></div>
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-blue-900/30 backdrop-blur-sm"></div>
+
+  <!-- Content -->
+  <div
+    class="relative max-w-2xl mx-auto px-6 flex flex-col items-center"
+  >
+    <h1
+      class="text-5xl font-semibold mb-4 text-gray-50 drop-shadow-md"
+      data-aos="fade-down"
+      data-aos-delay="100"
+      data-aos-duration="1000"
+    >
+      Your Trusted Financial Partner
+    </h1>
+    <p
+      class="text-lg mb-6 text-gray-200 drop-shadow-md"
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-duration="1000"
+    >
+      At Sacco, we empower members through financial services designed for their future.
+    </p>
+    <a
+      href="#contact"
+      class="px-6 py-2 bg-blue-500 text-gray-50 font-semibold rounded-md shadow-md hover:bg-blue-600 transition duration-300"
+      data-aos="zoom-in"
+      data-aos-delay="500"
+      data-aos-duration="800"
+    >
+      Get in Touch
+    </a>
+  </div>
+</section>
+
+
+
+
+
+<!-- About Section -->
+<section id="about" class="p-20 bg-gray-50">
+  <div class="max-w-6xl mx-auto text-center mb-12"
+       data-aos="fade-down"
+       data-aos-duration="1000"
+       data-aos-delay="100"
+       data-aos-once="false"
+       data-aos-mirror="true"
+  >
+    <h2 class="text-4xl font-semibold mb-4 text-blue-900">
+      About Us
+    </h2>
+    <p class="max-w-3xl mx-auto text-gray-700 mb-6">
+      Our Sacco is a community-oriented financial institution that aims to empower members by providing tailored financial products and services. We believe in unity, collaboration, and financial independence — putting you first at every step.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-6xl mx-auto">
+    <div class="p-6 bg-gray-50 shadow-md rounded-md text-center"
+         data-aos="fade-up"
+         data-aos-duration="800"
+         data-aos-delay="200"
+         data-aos-once="false"
+         data-aos-mirror="true"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" fill="#1E3A8A" viewBox="0 0 24 24" class="w-12 h-12 mb-4 mx-auto">
+        <path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm-1 15v-4H7v-2h4V7h2v4h4v2h-4v4h-2z" />
+      </svg>
+      <h3 class="text-2xl font-semibold mb-2 text-blue-900">
+        Community-Oriented
+      </h3>
+      <p class="text-gray-600">
+        We put people first, strengthening financial well-being through collaboration.
+      </p>
+    </div>
+
+    <div class="p-6 bg-gray-50 shadow-md rounded-md text-center"
+         data-aos="fade-up"
+         data-aos-duration="800"
+         data-aos-delay="400"
+         data-aos-once="false"
+         data-aos-mirror="true"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" fill="#1E3A8A" viewBox="0 0 24 24" class="w-12 h-12 mb-4 mx-auto">
+        <path d="M20 6h-2V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v2H4a1 1 0 00-1 1v12a1 1 0 001 1h16a1 1 0 001-1V7a1 1 0 00-1-1zm-11 0V4h2v2H9zm10 12H5V8h14v10z" />
+      </svg>
+      <h3 class="text-2xl font-semibold mb-2 text-blue-900">
+        Tailored Solutions
+      </h3>
+      <p class="text-gray-600">
+        We customize financial products to match your unique needs.
+      </p>
+    </div>
+
+    <div class="p-6 bg-gray-50 shadow-md rounded-md text-center"
+         data-aos="fade-up"
+         data-aos-duration="800"
+         data-aos-delay="600"
+         data-aos-once="false"
+         data-aos-mirror="true"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" fill="#1E3A8A" viewBox="0 0 24 24" class="w-12 h-12 mb-4 mx-auto">
+        <path d="M12 2L3 11h18L12 2zm0 20v-9H5v9h14v-9h-6v9h-2z" />
+      </svg>
+      <h3 class="text-2xl font-semibold mb-2 text-blue-900">
+        Financial Independence
+      </h3>
+      <p class="text-gray-600">
+        We empower members to achieve financial independence and stability.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="growth-journey" class="py-20 px-6 bg-gray-50">
+  <div class="max-w-6xl mx-auto">
+    <h2
+      class="text-3xl font-semibold mb-12 text-gray-900 text-center"
+    >
+      Our Growth Journey
+    </h2>
+
+    <div class="relative space-y-16">
+      <!-- Timeline vertical line -->
+      <div
+        class="hidden sm:block absolute left-1/2 top-0 -translate-x-1/2 w-1 bg-gray-300 h-full"
+      ></div>
+
+      <!-- Milestone 1 -->
+      <div
+        class="flex flex-col sm:flex-row sm:items-center"
+        data-aos="fade-right"
+        data-aos-delay="100"
+      >
+        <div class="sm:w-1/2 sm:pr-10 sm:text-right">
+          <h4
+            class="text-gray-900 font-semibold text-2xl mb-3 flex items-center justify-end space-x-3"
+          >
+            <span>2015 — Established</span>
+            <i
+              class="fa-solid fa-flag text-blue-500 hover:text-blue-600 transition-transform duration-300 transform hover:scale-110"
+              aria-hidden="true"
+            ></i>
+          </h4>
+          <p class="text-gray-600 max-w-md mx-auto sm:mx-0">
+            Our sacco was founded with a mission to empower small businesses and
+            individuals through financial services.
+          </p>
+        </div>
+        <div
+          class="hidden sm:flex sm:w-1/12 sm:justify-center"
+        >
+          <div
+            class="bg-blue-500 w-8 h-8 rounded-full relative z-10 shadow-lg flex items-center justify-center transition-transform duration-300 hover:scale-110"
+          >
+            <i
+              class="fa-solid fa-flag text-white"
+              aria-hidden="true"
+            ></i>
+          </div>
+        </div>
+        <div class="sm:w-1/2 sm:pl-10"></div>
+      </div>
+
+      <!-- Milestone 2 -->
+      <div
+        class="flex flex-col sm:flex-row sm:items-center"
+        data-aos="fade-left"
+        data-aos-delay="200"
+      >
+        <div class="sm:w-1/2 sm:pr-10 order-2 sm:order-1"></div>
+        <div
+          class="hidden sm:flex sm:w-1/12 sm:justify-center order-1 sm:order-2"
+        >
+          <div
+            class="bg-blue-500 w-8 h-8 rounded-full relative z-10 shadow-lg flex items-center justify-center transition-transform duration-300 hover:scale-110"
+          >
+            <i
+              class="fa-solid fa-users text-white"
+              aria-hidden="true"
+            ></i>
+          </div>
+        </div>
+        <div class="sm:w-1/2 sm:pl-10 order-3 sm:order-3">
+          <h4
+            class="text-gray-900 font-semibold text-2xl mb-3 flex items-center space-x-3"
+          >
+            <i
+              class="fa-solid fa-users text-blue-500 hover:text-blue-600 transition-transform duration-300 transform hover:scale-110"
+              aria-hidden="true"
+            ></i>
+            <span>2017 — Reached 500 Members</span>
+          </h4>
+          <p class="text-gray-600 max-w-md mx-auto sm:mx-0">
+            We crossed 500 members, reflecting growing trust in our services.
+          </p>
+        </div>
+      </div>
+
+      <!-- Milestone 3 -->
+      <div
+        class="flex flex-col sm:flex-row sm:items-center"
+        data-aos="fade-right"
+        data-aos-delay="300"
+      >
+        <div class="sm:w-1/2 sm:pr-10 sm:text-right">
+          <h4
+            class="text-gray-900 font-semibold text-2xl mb-3 flex items-center justify-end space-x-3"
+          >
+            <span>2020 — Launched Education &amp; Mortgage Products</span>
+            <i
+              class="fa-solid fa-graduation-cap text-blue-500 hover:text-blue-600 transition-transform duration-300 transform hover:scale-110"
+              aria-hidden="true"
+            ></i>
+          </h4>
+          <p class="text-gray-600 max-w-md mx-auto sm:mx-0">
+            To empower education and home ownership, we introduced specialized
+            products for education and mortgage financing.
+          </p>
+        </div>
+        <div
+          class="hidden sm:flex sm:w-1/12 sm:justify-center"
+        >
+          <div
+            class="bg-blue-500 w-8 h-8 rounded-full relative z-10 shadow-lg flex items-center justify-center transition-transform duration-300 hover:scale-110"
+          >
+            <i
+              class="fa-solid fa-graduation-cap text-white"
+              aria-hidden="true"
+            ></i>
+          </div>
+        </div>
+        <div class="sm:w-1/2 sm:pl-10"></div>
+      </div>
+
+      <!-- Milestone 4 -->
+      <div
+        class="flex flex-col sm:flex-row sm:items-center"
+        data-aos="fade-left"
+        data-aos-delay="400"
+      >
+        <div class="sm:w-1/2 sm:pr-10 order-2 sm:order-1"></div>
+        <div
+          class="hidden sm:flex sm:w-1/12 sm:justify-center order-1 sm:order-2"
+        >
+          <div
+            class="bg-blue-500 w-8 h-8 rounded-full relative z-10 shadow-lg flex items-center justify-center transition-transform duration-300 hover:scale-110"
+          >
+            <i
+              class="fa-solid fa-chart-line text-white"
+              aria-hidden="true"
+            ></i>
+          </div>
+        </div>
+        <div class="sm:w-1/2 sm:pl-10 order-3 sm:order-3">
+          <h4
+            class="text-gray-900 font-semibold text-2xl mb-3 flex items-center space-x-3"
+          >
+            <i
+              class="fa-solid fa-chart-line text-blue-500 hover:text-blue-600 transition-transform duration-300 transform hover:scale-110"
+              aria-hidden="true"
+            ></i>
+            <span>2024 — 10,000+ Members</span>
+          </h4>
+          <p class="text-gray-600 max-w-md mx-auto sm:mx-0">
+            Our community has grown to over 10,000 members, reflecting strong
+            confidence in our mission and services.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="p-20 bg-gradient-to-br from-blue-50 to-blue-100">
+  <div class="max-w-6xl mx-auto text-center mb-12"
+       data-aos="fade-down"
+       data-aos-duration="1000"
+       data-aos-delay="100"
+       data-aos-once="false"
+       data-aos-mirror="true"
+  >
+    <h2 class="text-4xl font-extrabold mb-4 text-blue-900 tracking-wide">
+      Our Services
+    </h2>
+    <p class="max-w-3xl mx-auto text-blue-800 mb-10">
+      We provide a range of financial solutions tailored to support your growth and security.
+    </p>
+  </div>
+
+  <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    
+    <!-- Card 1 -->
+    <div
+      class="relative group h-64 cursor-pointer overflow-hidden shadow-lg"
+      style="background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center;"
+      data-aos="zoom-in-up"
+      data-aos-duration="800"
+      data-aos-delay="200"
+      data-aos-once="false"
+      data-aos-mirror="true"
+    >
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-blue-900/70 group-hover:bg-blue-900/90 transition duration-500"></div>
+
+      <!-- Text Container -->
+      <div
+        class="absolute inset-0 flex flex-col justify-center items-center text-center px-6 text-white transform translate-y-full group-hover:translate-y-0 transition duration-500"
+      >
+        <h3 class="text-2xl font-semibold mb-2">Savings Accounts</h3>
+        <p class="leading-relaxed">
+          Safe deposit and flexible withdrawal options designed to grow your savings securely.
+        </p>
+      </div>
+
+      <!-- Title visible before hover -->
+      <h3
+        class="absolute bottom-6 left-6 text-xl font-bold text-white drop-shadow-lg group-hover:opacity-0 transition duration-500"
+      >
+        Savings Accounts
+      </h3>
+    </div>
+
+    <!-- Card 2 -->
+    <div
+      class="relative group h-64 cursor-pointer overflow-hidden shadow-lg"
+      style="background-image: url('https://images.unsplash.com/photo-1515165562835-cd18d9601687?auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center;"
+      data-aos="zoom-in-up"
+      data-aos-duration="800"
+      data-aos-delay="400"
+      data-aos-once="false"
+      data-aos-mirror="true"
+    >
+      <div class="absolute inset-0 bg-blue-900/70 group-hover:bg-blue-900/90 transition duration-500"></div>
+      <div
+        class="absolute inset-0 flex flex-col justify-center items-center text-center px-6 text-white transform translate-y-full group-hover:translate-y-0 transition duration-500"
+      >
+        <h3 class="text-2xl font-semibold mb-2">Business Loans</h3>
+        <p class="leading-relaxed">
+          Affordable financing options to help your business expand and succeed.
+        </p>
+      </div>
+      <h3
+        class="absolute bottom-6 left-6 text-xl font-bold text-white drop-shadow-lg group-hover:opacity-0 transition duration-500"
+      >
+        Business Loans
+      </h3>
+    </div>
+
+    <!-- Card 3 -->
+    <div
+      class="relative group h-64 cursor-pointer overflow-hidden shadow-lg"
+      style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center;"
+      data-aos="zoom-in-up"
+      data-aos-duration="800"
+      data-aos-delay="600"
+      data-aos-once="false"
+      data-aos-mirror="true"
+    >
+      <div class="absolute inset-0 bg-blue-900/70 group-hover:bg-blue-900/90 transition duration-500"></div>
+      <div
+        class="absolute inset-0 flex flex-col justify-center items-center text-center px-6 text-white transform translate-y-full group-hover:translate-y-0 transition duration-500"
+      >
+        <h3 class="text-2xl font-semibold mb-2">Development Loans</h3>
+        <p class="leading-relaxed">
+          Supporting education, home improvements, and agricultural projects for lasting growth.
+        </p>
+      </div>
+      <h3
+        class="absolute bottom-6 left-6 text-xl font-bold text-white drop-shadow-lg group-hover:opacity-0 transition duration-500"
+      >
+        Development Loans
+      </h3>
+    </div>
+
+    <!-- Card 4 -->
+    <div
+      class="relative group h-64 cursor-pointer overflow-hidden shadow-lg"
+      style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80'); background-size: cover; background-position: center;"
+      data-aos="zoom-in-up"
+      data-aos-duration="800"
+      data-aos-delay="800"
+      data-aos-once="false"
+      data-aos-mirror="true"
+    >
+      <div class="absolute inset-0 bg-blue-900/70 group-hover:bg-blue-900/90 transition duration-500"></div>
+      <div
+        class="absolute inset-0 flex flex-col justify-center items-center text-center px-6 text-white transform translate-y-full group-hover:translate-y-0 transition duration-500"
+      >
+        <h3 class="text-2xl font-semibold mb-2">Insurance Services</h3>
+        <p class="leading-relaxed">
+          Protect yourself against unforeseen financial risks with our reliable coverage plans.
+        </p>
+      </div>
+      <h3
+        class="absolute bottom-6 left-6 text-xl font-bold text-white drop-shadow-lg group-hover:opacity-0 transition duration-500"
+      >
+        Insurance Services
+      </h3>
+    </div>
+  </div>
+
+  <div class="mt-16 text-center"
+       data-aos="fade-up"
+       data-aos-duration="1000"
+       data-aos-delay="1000"
+       data-aos-once="false"
+       data-aos-mirror="true"
+  >
+    <a href="#contact"
+      class="inline-block px-10 py-3 bg-blue-900 text-white text-lg font-semibold rounded-full shadow-lg hover:bg-blue-700 transition duration-300"
+    >
+      Discover More & Get Started
+    </a>
+  </div>
+</section>
+
+
+
+<!-- Our Personnel Section -->
+<section id="personnel" class="p-20 bg-white">
+  <div class="max-w-6xl mx-auto text-center mb-12"
+       data-aos="fade-down"
+       data-aos-duration="1000"
+       data-aos-delay="100"
+       data-aos-once="false"
+       data-aos-mirror="true"
+  >
+    <h2 class="text-4xl font-extrabold mb-4 text-blue-900 tracking-wide">
+      Meet Our Leadership
+    </h2>
+    <p class="max-w-3xl mx-auto text-blue-700 text-lg">
+      Our dedicated leadership team is committed to guiding the Sacco with integrity and excellence.
+    </p>
+  </div>
+
+  <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+    <!-- Card 1 -->
+    <div class="bg-gray-50 rounded-lg shadow-lg p-8 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300 border-2 border-transparent hover:border-blue-600 cursor-pointer"
+         data-aos="fade-up"
+         data-aos-duration="800"
+         data-aos-delay="200"
+         data-aos-once="false"
+         data-aos-mirror="true"
+    >
+      <img 
+        src="https://randomuser.me/api/portraits/men/32.jpg" 
+        alt="John Mwangi" 
+        class="w-24 h-24 rounded-full mb-6 object-cover border-4 border-blue-500"
+      />
+      <h3 class="text-xl font-semibold text-blue-900">John Mwangi</h3>
+      <p class="text-blue-600 italic mb-4">Chairperson</p>
+      <p class="text-gray-600 opacity-0 max-h-0 overflow-hidden transition-all duration-300 hover:opacity-100 hover:max-h-40">
+        Leading with vision and dedication to foster growth and community trust.
+      </p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-gray-50 rounded-lg shadow-lg p-8 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300 border-2 border-transparent hover:border-blue-600 cursor-pointer"
+         data-aos="fade-up"
+         data-aos-duration="800"
+         data-aos-delay="400"
+         data-aos-once="false"
+         data-aos-mirror="true"
+    >
+      <img 
+        src="https://randomuser.me/api/portraits/women/44.jpg" 
+        alt="Grace Njeri" 
+        class="w-24 h-24 rounded-full mb-6 object-cover border-4 border-blue-500"
+      />
+      <h3 class="text-xl font-semibold text-blue-900">Grace Njeri</h3>
+      <p class="text-blue-600 italic mb-4">Manager</p>
+      <p class="text-gray-600 opacity-0 max-h-0 overflow-hidden transition-all duration-300 hover:opacity-100 hover:max-h-40">
+        Ensuring smooth operations and member satisfaction with integrity.
+      </p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-gray-50 rounded-lg shadow-lg p-8 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300 border-2 border-transparent hover:border-blue-600 cursor-pointer"
+         data-aos="fade-up"
+         data-aos-duration="800"
+         data-aos-delay="600"
+         data-aos-once="false"
+         data-aos-mirror="true"
+    >
+      <img 
+        src="https://randomuser.me/api/portraits/men/54.jpg" 
+        alt="Peter Otieno" 
+        class="w-24 h-24 rounded-full mb-6 object-cover border-4 border-blue-500"
+      />
+      <h3 class="text-xl font-semibold text-blue-900">Peter Otieno</h3>
+      <p class="text-blue-600 italic mb-4">Treasurer</p>
+      <p class="text-gray-600 opacity-0 max-h-0 overflow-hidden transition-all duration-300 hover:opacity-100 hover:max-h-40">
+        Managing funds with transparency and responsibility.
+      </p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="bg-gray-50 rounded-lg shadow-lg p-8 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300 border-2 border-transparent hover:border-blue-600 cursor-pointer"
+         data-aos="fade-up"
+         data-aos-duration="800"
+         data-aos-delay="800"
+         data-aos-once="false"
+         data-aos-mirror="true"
+    >
+      <img 
+        src="https://randomuser.me/api/portraits/women/65.jpg" 
+        alt="Susan Kariuki" 
+        class="w-24 h-24 rounded-full mb-6 object-cover border-4 border-blue-500"
+      />
+      <h3 class="text-xl font-semibold text-blue-900">Susan Kariuki</h3>
+      <p class="text-blue-600 italic mb-4">Secretary</p>
+      <p class="text-gray-600 opacity-0 max-h-0 overflow-hidden transition-all duration-300 hover:opacity-100 hover:max-h-40">
+        Keeping our records and communications clear and effective.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="testimonials" class="py-20 px-6 bg-gray-900">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-semibold mb-10 text-gray-100 text-center">
+      What Our Members Say
+    </h2>
+
+    <!-- Slider Container -->
+    <div class="swiper myTestimonials relative">
+      <div class="swiper-wrapper">
+        
+        <!-- Slide 1 -->
+        <div class="swiper-slide p-6 bg-gray-800 rounded-md shadow-md">
+          <img src="/path-to-user1.jpg" alt="Member photo" 
+               class="w-16 h-16 rounded-full mb-4">
+          <p class="text-gray-400 mb-4">
+            “Sacco has supported me in growing my small business. The process was smooth and the team was extremely helpful from start to finish.”
+          </p>
+          <h4 class="text-gray-100 font-semibold">James Kamau</h4>
+          <span class="text-gray-500 text-sm">Business Owner</span>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide p-6 bg-gray-800 rounded-md shadow-md">
+          <img src="/path-to-user2.jpg" alt="Member photo" 
+               class="w-16 h-16 rounded-full mb-4">
+          <p class="text-gray-400 mb-4">
+            “The education loan I received from Sacco made it possible for me to pursue my degree without financial stress. Thank you for believing in me.”
+          </p>
+          <h4 class="text-gray-100 font-semibold">Grace Njeri</h4>
+          <span class="text-gray-500 text-sm">Student</span>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide p-6 bg-gray-800 rounded-md shadow-md">
+          <img src="/path-to-user3.jpg" alt="Member photo" 
+               class="w-16 h-16 rounded-full mb-4">
+          <p class="text-gray-400 mb-4">
+            “Excellent service and friendly team. Sacco made it easy for me to buy land and construct my home. Highly recommended!”
+
+          </p>
+          <h4 class="text-gray-100 font-semibold">Alice Mwangi</h4>
+          <span class="text-gray-500 text-sm">Property Owner</span>
+        </div>
+
+        <!-- Additional slides -->
+        <div class="swiper-slide p-6 bg-gray-800 rounded-md shadow-md">
+          <img src="/path-to-user3.jpg" alt="Member photo" 
+               class="w-16 h-16 rounded-full mb-4">
+          <p class="text-gray-400 mb-4">
+            “Excellent service and friendly team. Sacco made it easy for me to buy land and construct my home. Highly recommended!”
+
+          </p>
+          <h4 class="text-gray-100 font-semibold">Alice Mwangi</h4>
+          <span class="text-gray-500 text-sm">Property Owner</span>
+        </div>
+
+        <div class="swiper-slide p-6 bg-gray-800 rounded-md shadow-md">
+          <img src="/path-to-user3.jpg" alt="Member photo" 
+               class="w-16 h-16 rounded-full mb-4">
+          <p class="text-gray-400 mb-4">
+            “Excellent service and friendly team. Sacco made it easy for me to buy land and construct my home. Highly recommended!”
+
+          </p>
+          <h4 class="text-gray-100 font-semibold">Alice Mwangi</h4>
+          <span class="text-gray-500 text-sm">Property Owner</span>
+        </div>
+
+        <!-- Add more slides as needed -->
+      </div>
+
+      <!-- Slider pagination -->
+      <div class="swiper-pagination mt-6"></div>
+
+      <!-- Slider arrows -->
+      <div
+        class="swiper-button-prev text-gray-100 left-[-50px] absolute top-1/2 transform -translate-y-1/2 p-2 rounded-full bg-gray-800 shadow-md hover:bg-blue-500 transition duration-300">
+        <i class="fas fa-arrow-left"></i>
+      </div>
+      <div
+        class="swiper-button-next text-gray-100 right-[-50px] absolute top-1/2 transform -translate-y-1/2 p-2 rounded-full bg-gray-800 shadow-md hover:bg-blue-500 transition duration-300">
+        <i class="fas fa-arrow-right"></i>
+      </div>
+    </div><!-- End of .swiper -->
+  </div><!-- End of max-w-6xl -->
+</section>
+
+
+
+<!-- Contact Section -->
+<section id="contact" class="p-20 bg-white">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl font-extrabold mb-6 text-blue-900 text-center tracking-wide">
+      Contact Us
+    </h2>
+    <p class="mb-12 text-center text-gray-700 max-w-3xl mx-auto text-lg">
+      We're here to help you achieve financial stability. Reach out to us today with any inquiries or feedback.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+
+      <!-- Map -->
+      <div class="rounded-lg overflow-hidden shadow-lg">
+        <iframe
+          class="w-full h-96"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.044245970874!2d36.82194681522816!3d-1.2920659393090648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10a1d3c6b1eb%3A0xa4c2eeb713f3b1a6!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2sus!4v1687000000000!5m2!1sen!2sus"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Sacco Location">
+        </iframe>
+      </div>
+
+      <!-- Contact Form -->
+      <form action="#" method="POST" class="bg-gray-50 p-8 rounded-lg shadow-md">
+        <div class="mb-6">
+          <label for="name" class="block text-blue-900 font-semibold mb-2">Name</label>
+          <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            required 
+            placeholder="Your full name" 
+            class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+          />
+        </div>
+        <div class="mb-6">
+          <label for="email" class="block text-blue-900 font-semibold mb-2">Email</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            required 
+            placeholder="your.email@example.com" 
+            class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+          />
+        </div>
+        <div class="mb-6">
+          <label for="subject" class="block text-blue-900 font-semibold mb-2">Subject</label>
+          <input 
+            type="text" 
+            id="subject" 
+            name="subject" 
+            placeholder="Subject of your message" 
+            class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+          />
+        </div>
+        <div class="mb-6">
+          <label for="message" class="block text-blue-900 font-semibold mb-2">Message</label>
+          <textarea 
+            id="message" 
+            name="message" 
+            rows="5" 
+            required 
+            placeholder="Write your message here..." 
+            class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition resize-none"
+          ></textarea>
+        </div>
+        <button 
+          type="submit" 
+          class="w-full bg-blue-900 text-gray-50 py-3 font-semibold rounded-md shadow-md hover:bg-blue-600 transition duration-300"
+        >
+          Send Message
+        </button>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+<footer class="bg-black text-gray-400 py-12 px-6">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+    
+    <!-- Logo & Firm Info -->
+    <div>
+      <a href="#" class="flex items-center mb-4">
+        <img src="/path-to-logo.png" alt="Sacco Logo" class="h-12 w-auto mr-2">
+        <span class="text-3xl font-bold text-blue-500">Sacco</span>
+      </a>
+      <p class="text-sm max-w-xs">
+        Sacco is a trusted financial cooperative empowering members with innovative services, committed to fostering financial independence and growth.
+      </p>
+    </div>
+    
+    <!-- Navigation Links -->
+    <div>
+      <h3 class="text-xl font-semibold mb-4 text-gray-100">Quick Links</h3>
+      <ul class="space-y-2">
+        <li><a href="#hero" class="hover:text-blue-500 transition duration-300 block py-1">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-500 transition duration-300 block py-1">About Us</a></li>
+        <li><a href="#services" class="hover:text-blue-500 transition duration-300 block py-1">Services</a></li>
+        <li><a href="#contact" class="hover:text-blue-500 transition duration-300 block py-1">Contact</a></li>
+      </ul>
+    </div>
+    
+    <!-- Contact Info -->
+    <div>
+      <h3 class="text-xl font-semibold mb-4 text-gray-100">Contact Us</h3>
+      <p class="text-gray-400 text-sm mb-2">
+        Email: <a href="mailto:contact@sacco.co.ke" class="hover:text-blue-500 transition duration-300 ml-1">contact@sacco.co.ke</a>
+      </p>
+      <p class="text-gray-400 text-sm">
+        Phone: <a href="tel:+254700000000" class="hover:text-blue-500 transition duration-300 ml-1">+254 700 000 000</a>
+      </p>
+      <p class="text-gray-400 text-sm mt-4 max-w-xs">
+        Visit our office to learn more about how we can support your financial goals.
+      </p>
+    </div>
+    
+    <!-- Social & Credits -->
+    <div>
+      <h3 class="text-xl font-semibold mb-4 text-gray-100">Follow Us</h3>
+      <div class="flex space-x-4 mb-6">
+        <a
+          href="#"
+          aria-label="X"
+          class="p-2 rounded-full bg-gray-800 text-gray-100 hover:bg-blue-500 transition duration-300 transform hover:scale-110 shadow-md"
+        >
+          <i class="fa-brands fa-x-twitter fa-lg"></i>
+        </a>
+        <a
+          href="#"
+          aria-label="Facebook"
+          class="p-2 rounded-full bg-gray-800 text-gray-100 hover:bg-blue-500 transition duration-300 transform hover:scale-110 shadow-md"
+        >
+          <i class="fab fa-facebook-f fa-lg"></i>
+        </a>
+        <a
+          href="#"
+          aria-label="Instagram"
+          class="p-2 rounded-full bg-gray-800 text-gray-100 hover:bg-blue-500 transition duration-300 transform hover:scale-110 shadow-md"
+        >
+          <i class="fab fa-instagram fa-lg"></i>
+        </a>
+        <a
+          href="#"
+          aria-label="LinkedIn"
+          class="p-2 rounded-full bg-gray-800 text-gray-100 hover:bg-blue-500 transition duration-300 transform hover:scale-110 shadow-md"
+        >
+          <i class="fab fa-linkedin-in fa-lg"></i>
+        </a>
+      </div>
+      <p class="text-gray-500 text-xs">
+        &copy; 2025 Sacco. All Rights Reserved.<br>
+        Designed &amp; Developed by 
+        <a 
+          href="https://www.816-dynamics.com/" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="underline hover:text-blue-500 transition duration-300 font-semibold">
+          The 816 Dynamics
+        </a>.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons()
+</script>
+
+
+
+
+  <script>
+  window.addEventListener('scroll', () => {
+    const header = document.querySelector("#header");
+
+    if (window.scrollY > 50) {
+      header.classList.add('bg-blue-900', 'shadow-md');
+    } else {
+      header.classList.remove('bg-blue-900', 'shadow-md');
+    }
+  });
+    const swiper = new Swiper('.myTestimonials', {
+    loop: true,
+    autoplay: { delay: 4000 },
+    pagination: { el: '.swiper-pagination', clickable: true },
+    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+    slidesPerView: 1,
+    spaceBetween: 20,
+    breakpoints: {
+      640: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 }
+    }
+  });
+    // Initialize AOS animations
+    AOS.init({
+    duration: 800,
+    once: false, // allow animation to repeat every time it scrolls into view
+    mirror: true, // animate out while scrolling past element (optional, adds smoothness)
+    easing: 'ease-in-out',
+  });
+
+</script>
+
+
+</body>
+</html>
