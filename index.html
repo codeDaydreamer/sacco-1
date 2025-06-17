@@ -22,6 +22,33 @@
 
 </head>
 <body class="bg-gray-50 text-gray-800 ">
+<!-- Preloader -->
+<div id="preloader" class="fixed inset-0 bg-gray-50 flex flex-col items-center justify-center z-50">
+  <div class="loader ease-linear rounded-full border-8 border-t-8 border-gray-300 border-t-blue-700 h-20 w-20 shadow-lg"></div>
+  <p class="mt-6 text-blue-900 font-semibold text-lg tracking-wide select-none opacity-90" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    Empowering Your Financial Future
+  </p>
+</div>
+
+<style>
+  /* Spinner animation */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* Pulse effect for softness */
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+  }
+
+  .loader {
+    border-top-color: #1e40af; /* Tailwind's blue-800 */
+    animation: spin 1.2s linear infinite, pulse 2.4s ease-in-out infinite;
+  }
+</style>
+
   
 <header id="header" 
   class="fixed w-full top-0 left-0 z-50 transition-all duration-500 ease-in-out">
@@ -868,6 +895,18 @@
     mirror: true, // animate out while scrolling past element (optional, adds smoothness)
     easing: 'ease-in-out',
   });
+  // Wait for all images to load before hiding preloader
+window.addEventListener('load', () => {
+  const preloader = document.getElementById('preloader');
+  if (preloader) {
+    preloader.style.opacity = '0';
+    preloader.style.pointerEvents = 'none';
+    setTimeout(() => {
+      preloader.remove();
+    }, 500); // fadeout duration
+  }
+});
+
 
 </script>
 
